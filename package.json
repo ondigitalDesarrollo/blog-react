@@ -4,7 +4,9 @@
   "description": "Blog react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w",
+    "start": "nodemon build/server/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,17 @@
   "bugs": {
     "url": "https://github.com/ondigitalDesarrollo/blog-react/issues"
   },
-  "homepage": "https://github.com/ondigitalDesarrollo/blog-react#readme"
+  "homepage": "https://github.com/ondigitalDesarrollo/blog-react#readme",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-latest-minimal": "^1.1.2",
+    "babel-preset-react": "^6.24.1",
+    "json-loader": "^0.5.4",
+    "webpack": "^2.6.1"
+  }
 }
